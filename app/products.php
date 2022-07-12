@@ -1,10 +1,11 @@
 <?php
+include 'a_products.php';
 include_once 'database.php';
-class products
+class products extends a_products
 {
     function __construct()
     {
-        $this -> database = new database('127.0.0.1', 'o33670ws_scandi', '65%JZuMZ', 'o33670ws_scandi');
+        $this -> database = new database('127.0.0.1', 'root', '', 'scandiweb');
 
     }
 
@@ -17,7 +18,7 @@ class products
 
     }
 
-    function delete_product($table ,$arr)
+    function products($table ,$arr)
     {
         $conn = $this -> database -> connect();
         $d = '';

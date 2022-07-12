@@ -2,7 +2,7 @@
 require_once './app/add_product.php';
 $product = new add_product();
 if(isset($_POST['sku'])){
-    $product->add($_POST['sku'],$_POST['name'],$_POST['price'],$_POST['type'], $_POST['size'],$_POST['height'],$_POST['width'], $_POST['length'],$_POST['weight']);
+    $product->products($_POST['sku'],$_POST['name'],$_POST['price'],$_POST['type'], $_POST['size'],$_POST['height'],$_POST['width'], $_POST['length'],$_POST['weight']);
 }
 ?>
 

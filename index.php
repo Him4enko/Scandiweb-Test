@@ -6,7 +6,7 @@ $furniture = $products -> load_product('products', 'furniture');
 $book = $products -> load_product('products', 'book');
 $array = array();
 $array = $_POST['check'];
-$delete = $products -> delete_product('products', $array);
+$delete = $products -> products('products', $array);
 
 ?>
 

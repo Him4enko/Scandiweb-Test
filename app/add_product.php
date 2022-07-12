@@ -1,14 +1,14 @@
 <?php
 include_once 'products.php';
-class add_product
+class add_product extends a_products
 {
     private $database;
     function __construct()
     {
 
-        $this -> database = new database('127.0.0.1', 'o33670ws_scandi', '65%JZuMZ', 'o33670ws_scandi');
+        $this -> database = new database('127.0.0.1', 'root', '', 'scandiweb');
     }
-    function add(
+    function products(
         $sku = NULL,
         $name = NULL,
         $price = NULL,
